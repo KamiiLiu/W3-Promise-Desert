@@ -1,0 +1,36 @@
+.header {
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.main-menu {
+    li>a {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 64px;
+    }
+
+    li:last-child>a {
+        margin-right: 0px;
+    }
+}
+
+.sub-menu {
+    display: none;
+
+    li {
+        padding: 24px 150px;
+        font-size: 32px;
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-menu {
+        display: none;
+    }
+}

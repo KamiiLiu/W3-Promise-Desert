@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./assets/style/location.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="layer-darkRed">
+      <!--用container控制最大寬度-->
+      <div class="header container-txt flex-spb">
+        <div class="logo flex-spb">
+          <a href="./index.html"><img src="./assets/images/logo-white.png" alt=""></a>
+        </div>
+        <ul class="main-menu flex-spb">
+          <li><a href="">系列鏡框</a>
+            <!--不知道要怎麼寫子目錄放哪先放第二層等hover-->
+            <!-- <ul class="sub-menu flex-spb">
+          <li>aOPTICAL</li>
+          <li>aSUNGLASSES</li>
+          <li>aFUNCTIONAL</li>
+        </ul> -->
+          </li>
+          <li><a href="./location.html">門市據點</a></li>
+          <li><a href="./blog.html">部落格</a></li>
+          <li><a href="">常見問題</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <%- contents %>
+
+      <footer class="layer-darkRed">
+        <div class="footer-top container-txt flex-spb">
+          <ul class="footer-left flex-spb">
+            <!-- 除了絕對定位是否還有其他做法 -->
+            <li><a href="javascript:;">首頁</a></li>
+            <li><a href="javascript:;">系列鏡框</a></li>
+            <li><a href="javascript:;">門市據點</a></li>
+            <li><a href="javascript:;">部落格</a></li>
+            <li><a href="javascript:;">常見問題</a></li>
+          </ul>
+          <ul class="footer-right flex-spb">
+            <li><a href="javascript:;"><img src="./assets/images/ic-social-fb.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./assets/images/ic_social_ig.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./assets/images/ic_social_line.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-middle container-txt">
+          <div><img src="./assets/images/" alt=""><span>0800-000-000</span></div>
+          <div><img src="" alt=""><span>glasses@business.com</span></div>
+        </div>
+        <div class="footer-bottom container-txt flex-spb">
+          <div class="footer-bottom-left">
+            <div>Copyright © 2020 Glasses.All rights reserved.</div>
+          </div>
+          <div class="footer-bottom-right flex-spb db-phone">
+            <li><a href="javascript:;">隱私權政策</a></li>
+            <li><a href="javascript:;">服務條款</a></li>
+          </div>
+        </div>
+      </footer>
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
+  </div>
+</body>
+
+</html>
