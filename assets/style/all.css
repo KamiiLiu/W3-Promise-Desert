@@ -300,7 +300,30 @@ footer {
 .wrap-good .color div:first-child {
   background-color: #650300; }
 
+@media screen and (max-width: 768px) {
+  .card-list > .card {
+    max-width: 336px;
+    margin-bottom: 80px; } }
+
+@media screen and (max-width: 375px) {
+  .card-list {
+    display: block; }
+  .card-list > .card {
+    max-width: 306px;
+    margin-bottom: 80px; }
+  .card:nth-child(n+7) {
+    display: none; } }
+
 .card-sunglass-list .card {
   max-width: 416px; }
+
+@media screen and (max-width: 768px) {
+  .card-list > .card {
+    max-width: 336px;
+    margin-bottom: 80px; } }
+
+@media screen and (max-width: 375px) {
+  .card-list {
+    display: block; } }
 
 /*# sourceMappingURL=all.css.map */
