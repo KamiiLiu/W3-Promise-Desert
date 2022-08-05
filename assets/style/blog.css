@@ -15,7 +15,15 @@ a, a:hover {
 
 .container-txt {
   margin: 0 auto;
-  max-width: 1296px; }
+  max-width: 67.5%; }
+
+.page-title {
+  border-left: 8px solid #650300;
+  padding-left: 16px;
+  font-size: 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 32px; }
 
 img {
   max-width: 100%;
@@ -73,17 +81,37 @@ button {
       -ms-flex-pack: start;
           justify-content: start; }
 
+.switcbox {
+  margin-bottom: 80px; }
+  .switcbox li {
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 12px 16px;
+    border: 1px solid #000; }
+  .switcbox li:hover {
+    background-color: #000000;
+    color: #FFFFFF; }
+  .switcbox li:first-child,
+  .switcbox li:last-child {
+    font-size: 19px;
+    padding: 11px 12px; }
+
 @media screen and (max-width: 768px) {
   .container-txt {
+    margin: 0 auto;
     max-width: 696px; }
   .db-ipad {
     display: block; } }
 
 @media screen and (max-width: 375px) {
-  .nav {
-    display: none; }
   .container-txt {
-    max-width: 95%; } }
+    margin: 0 auto;
+    max-width: 95%; }
+  .page-title {
+    font-size: 24px; } }
+
+header {
+  position: relative; }
 
 .header {
   -webkit-box-pack: justify;
@@ -102,12 +130,34 @@ button {
 .main-menu li:last-child > a {
   margin-right: 0px; }
 
+.sub-menu-wrap {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0; }
+
 .sub-menu {
-  display: none; }
+  background-color: #fff; }
   .sub-menu li {
-    padding: 24px 150px;
+    width: 33.3333%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .sub-menu a + a {
+    border-left: 1px solid #000; }
+  .sub-menu a {
+    width: 100%;
+    padding: 24px 0;
     font-size: 32px;
-    width: 33.3333%; }
+    color: #000000;
+    text-align: center; }
+  .sub-menu a.actived,
+  .sub-menu a:hover {
+    border-bottom: 8px solid #AA0601; }
+
+.switch-header:hover .sub-menu-wrap {
+  display: block; }
 
 @media screen and (max-width: 375px) {
   .main-menu {
@@ -235,21 +285,6 @@ h1 {
   right: 0;
   font-size: 36px;
   color: #650300; }
-
-.switcbox {
-  margin-bottom: 80px; }
-  .switcbox li {
-    font-size: 18px;
-    line-height: 1.5em;
-    padding: 12px 16px;
-    border: 1px solid #000; }
-  .switcbox li:hover {
-    background-color: #000000;
-    color: #FFFFFF; }
-  .switcbox li:first-child,
-  .switcbox li:last-child {
-    font-size: 19px;
-    padding: 11px 12px; }
 
 @media screen and (max-width: 768px) {
   .card {

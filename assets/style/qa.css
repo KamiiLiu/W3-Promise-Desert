@@ -1,0 +1,33 @@
+.wrap-qa h1,
+.wrap-qa h2,
+.wrap-qa p {
+  line-height: 1.5em; }
+
+.wrap-qa h1 {
+  font-weight: 900;
+  margin: 96px 0 32px; }
+
+.wrap-qa h2 {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 24px; }
+
+.wrap-qa h3 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 8px; }
+
+.wrap-qa p {
+  font-size: 16px;
+  margin-bottom: 32px; }
+
+.wrap-qa section {
+  width: 66.05%; }
+  .wrap-qa section > p:last-child {
+    margin-bottom: 80px; }
+
+@media screen and (max-width: 768px) {
+  .wrap-qa section {
+    width: 100%; } }
+
+/*# sourceMappingURL=qa.css.map */
